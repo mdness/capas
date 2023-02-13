@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    body 
+        div(id='chatBody')
+            form(id='formMessage')
+                li 
+                    label(for="email") Email: 
+                    input(type="email" id='email' required name="email" autocomplete="off" placeholder='Write your email' value=name)
+                li
+                    label(for="msg") Message: 
+                    input( id="msg" type="text" placeholder="Write your message" required autocomplete="off")
+                button(type="submit") Send message 
+
+    include components/message
+
+
